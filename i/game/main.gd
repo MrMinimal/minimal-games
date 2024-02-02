@@ -18,7 +18,8 @@ func _on_button_pressed() -> void:
 	var countdown: Label = get_node("Countdown")
 	countdown.visible = true
 	current_counter -= 1
-	countdown.text = "another " + str(current_counter) + " times"
+	var repetition: String = "time" if current_counter == 1 else str(current_counter) + " times"
+	countdown.text = "another " + repetition
 	_set_next_background_color()
 	
 	if current_counter == 0:
