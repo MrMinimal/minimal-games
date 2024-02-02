@@ -1,0 +1,92 @@
+[gd_scene load_steps=3 format=3 uid="uid://fhuls7rh8vaj"]
+
+[ext_resource type="Script" path="res://game/main.gd" id="1_r14g7"]
+[ext_resource type="Theme" uid="uid://bbvxmph234fvp" path="res://game/themes/interface_theme.tres" id="2_lbne6"]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r14g7")
+colors = Array[Color]([Color(0.0901961, 0.494118, 0.537255, 1), Color(0.0313726, 0.298039, 0.380392, 1), Color(0.858824, 0.227451, 0.203922, 1), Color(0.196078, 0.188235, 0.192157, 1), Color(0, 0, 0, 1)])
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.847059, 0, 0.654902, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 343.0
+offset_top = -118.0
+offset_right = 583.0
+offset_bottom = -34.0
+grow_vertical = 0
+
+[node name="Order" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 45.76
+offset_top = -108.025
+offset_right = 574.76
+offset_bottom = -46.025
+grow_vertical = 0
+theme = ExtResource("2_lbne6")
+theme_override_font_sizes/font_size = 91
+text = "press the button"
+
+[node name="Countdown" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 600.0
+offset_top = -108.0
+offset_right = 1129.0
+offset_bottom = -46.0
+grow_vertical = 0
+theme = ExtResource("2_lbne6")
+theme_override_font_sizes/font_size = 91
+text = "another X times"
+
+[node name="WinningOverlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.784314, 0.341176, 1)
+
+[node name="Order2" type="Label" parent="WinningOverlay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -264.5
+offset_top = -31.0
+offset_right = 264.5
+offset_bottom = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_lbne6")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 91
+text = "You won!"
+horizontal_alignment = 1
