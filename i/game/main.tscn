@@ -27,10 +27,10 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 343.0
-offset_top = -118.0
-offset_right = 583.0
-offset_bottom = -34.0
+offset_left = 170.0
+offset_top = -62.0
+offset_right = 292.0
+offset_bottom = -15.0
 grow_vertical = 0
 
 [node name="Order" type="Label" parent="."]
@@ -38,13 +38,13 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 45.76
-offset_top = -108.025
-offset_right = 574.76
-offset_bottom = -46.025
+offset_left = 19.0
+offset_top = -54.0
+offset_right = 288.0
+offset_bottom = -23.0
 grow_vertical = 0
 theme = ExtResource("2_lbne6")
-theme_override_font_sizes/font_size = 91
+theme_override_font_sizes/font_size = 46
 text = "press the button"
 
 [node name="Countdown" type="Label" parent="."]
@@ -53,13 +53,13 @@ layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 600.0
-offset_top = -108.0
-offset_right = 1129.0
-offset_bottom = -46.0
+offset_left = 297.0
+offset_top = -54.0
+offset_right = 542.0
+offset_bottom = -23.0
 grow_vertical = 0
 theme = ExtResource("2_lbne6")
-theme_override_font_sizes/font_size = 91
+theme_override_font_sizes/font_size = 46
 text = "another X times"
 
 [node name="WinningOverlay" type="ColorRect" parent="."]
